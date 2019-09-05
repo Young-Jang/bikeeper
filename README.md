@@ -1,2 +1,2 @@
 # bikeeper
-## bike rent & delivery service
+## bike rent & delivery service app
