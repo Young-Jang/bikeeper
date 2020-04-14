@@ -40,3 +40,12 @@ Screenshots
 * Bicycle status
 
 ![bikestate](https://user-images.githubusercontent.com/45625434/68876272-898ccd00-0747-11ea-874a-62c319dde4a4.jpg)
+
+Contributing
+--------------
+Please fork this project first and pick one of issues you can handle then shoot us your pull request.
+
+License
+--------------
+AroundME is MIT licensed, as found in the [LICENSE](https://github.com/Young-Jang/AroundME/blob/master/License) file.
+
