@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     private
     int index;
     float downX, upX;
-    String texts[] = {"일정거리 이탈시 알림", "충격감지시 알림", "주기적인 상태 알림"};
+    String texts[] = {"�씪�젙嫄곕━ �씠�깉�떆 �븣由�", "異⑷꺽媛먯��떆 �븣由�", "二쇨린�쟻�씤 �긽�깭 �븣由�"};
     int images[] = {R.drawable.ic_slide_01, R.drawable.ic_slide_02, R.drawable.ic_slide_03};
 
     @Override
@@ -50,18 +50,18 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, LoadingActivity.class);
         startActivity(intent);
 
-        // 전체화면인 DrawerLayout 객체 참조
+        // �쟾泥댄솕硫댁씤 DrawerLayout 媛앹껜 李몄“
         final DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
 
-        // Drawer 화면(뷰) 객체 참조
+        // Drawer �솕硫�(酉�) 媛앹껜 李몄“
         final View drawerView = (View) findViewById(R.id.drawer);
 
 
-        // 드로어 화면을 열고 닫을 버튼 객체 참조
+        // �뱶濡쒖뼱 �솕硫댁쓣 �뿴怨� �떕�쓣 踰꾪듉 媛앹껜 李몄“
         ImageButton btnOpenDrawer = (ImageButton) findViewById(R.id.menu);
         LinearLayout btnCloseDrawer =(LinearLayout)findViewById(R.id.out);
 
-        // 드로어 여는 버튼 리스너
+        // �뱶濡쒖뼱 �뿬�뒗 踰꾪듉 由ъ뒪�꼫
         btnOpenDrawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        // 드로어 닫는 버튼 리스너
+        // �뱶濡쒖뼱 �떕�뒗 踰꾪듉 由ъ뒪�꼫
         btnCloseDrawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
         notice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "푸쉬알림은 준비중입니다.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "�뫖�돩�븣由쇱� 以�鍮꾩쨷�엯�땲�떎.", Toast.LENGTH_SHORT).show();
                 Intent note = new Intent(MainActivity.this, pushActivity.class);
                 startActivity(note);
             }
@@ -184,12 +184,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked == true) {
-                    Toast.makeText(MainActivity.this, "잠금모드 실행", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "�옞湲덈え�뱶 �떎�뻾", Toast.LENGTH_SHORT).show();
                     lock.setImageResource(R.drawable.ic_lock_re);
                     swit.setChecked(true);
                     checks = true;
                 } else {
-                    Toast.makeText(MainActivity.this, "잠금모드 해제", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "�옞湲덈え�뱶 �빐�젣", Toast.LENGTH_SHORT).show();
                     lock.setImageResource(R.drawable.ic_unlock_re);
                     swit.setChecked(false);
                     checks = false;
@@ -325,3 +325,5 @@ public class MainActivity extends AppCompatActivity {
         ts1.setText(texts[index]);
     }
 }
+
+//git merge test
